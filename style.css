@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+#beroep {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+#beroep:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    padding: 12px 24px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+.result-section {
+    border-top: 2px solid #e0e0e0;
+    padding-top: 2rem;
+}
+
+.rapport {
+    background: #f7f7f7;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.meter-container {
+    text-align: center;
+}
+
+.meter {
+    width: 100%;
+    height: 30px;
+    background: #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.meter-vulling {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #48bb78 0%, #f6ad55 50%, #f56565 100%);
+    transition: width 0.5s ease;
+}
+
+.score {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Kleuren voor verschillende scores */
+.score.laag { color: #48bb78; }
+.score.midden { color: #f6ad55; }
+.score.hoog { color: #f56565; }
